@@ -15,27 +15,26 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
 	"h5 sample": {
 		"prefix": "h", // 快速创建html
 		"body": [
 			"<!DOCTYPE html>",
 			"<html lang=\"zh\">",
 			"<head>",
-				"\t<meta charset=\"UTF-8\">",
-				"\t<title>Document</title>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<title>Document</title>",
 			"</head>",
 			"<body>",
-				"\t",
+			"\t",
 			"</body>",
 			"</html>"
 		],
 		"description": "The full sample code -html5"
 	},
-	"css":{
+	"css": {
 		"prefix": "css",
 		"body": [
-			"<link type =\"text/css\" rel=\"stylesheet\" herf =\"\">"
+			"<link type =\"text/css\" rel=\"stylesheet\" href =\"\">"
 		],
 		"description": "link css -html5"
 	}
