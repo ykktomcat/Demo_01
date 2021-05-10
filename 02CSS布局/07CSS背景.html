@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      /* background-color: lightblue; */
+      height: 3000px;
+      background-image: url("images/bg1.jpg");
+      background-repeat: no-repeat;
+      /*  不自动复制铺满 */
+      background-attachment: fixed;
+      /* 固定背景图 不随滚动条移动*/
+      background-position: center center;
+      background-size: cover;
+    }
+
+    /* .div01 {
+      width: 400px;
+      height: 50px;
+      background-color: navy;
+    } */
+
+    .div02 {
+      width: 300px;
+      height: 200px;
+      background-color: transparent;
+      /* 设置为透明背景 */
+      border: 2px red solid;
+      /* 设置边框 展现效果 */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div01">
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+    <p>文字文字文字</p>
+  </div>
+  <div class="div02">测试div</div>
+</body>
+
+</html>
+
+<!-- 
+设置背景
+1.页面（body）
+2.容器（div） 
+
+background-position 设置背景图片的位置，有两个值：横向的偏移量 纵向的偏移量
+1. 400px  300px
+2. 40%    50%
+3.left,center,right    top,center,bottom
+
+
+设置图片 平铺整个body
+1.background-size: 100%;
+2.background-size: cover;
+
+
+设置背景两种写法
+background-color:navy; 只是设置背景色的颜色属性
+background:navy;  设置和背景相关的所有属性
+                                        position/size
+background: url("xxx") no-repeat center center/cover fixed   一行设置所有属性 更加简洁
+-->
