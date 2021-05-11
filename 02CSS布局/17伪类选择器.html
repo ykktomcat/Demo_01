@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        .div01{
+            width: 120px;
+            height: 50px;
+            margin: auto;
+            background-color: lightblue;
+            font-size: 22px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .div01:hover{
+            background-color: navy;
+            color: yellow;
+            font-weight: bold;    /* 变成粗体 */
+         
+        }
+        table>thead>tr{
+            background-color: aliceblue;
+            color: navy;
+            font-size: 18px;
+        }
+        /* 第一行数据 */
+        table>tbody>tr:first-child{
+            color: green;
+        }
+        /* 最后一行数据 */
+        table>tbody>tr:last-child{
+            color: red;
+        }
+        /* 从前往后数第3个 */
+            table>tbody>tr:nth-child(3){
+                color: blue;
+        }
+        /* 从后往前数第3个 */
+        table>tbody>tr:nth-last-child(3){
+            color: blue;
+        }
+          /* 奇数行 */
+          table>tbody>tr:nth-child(even){
+              background-color: bisque;
+            color: blue;
+        }
+            /* 偶数行 */
+            table>tbody>tr:nth-child(odd){
+              background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+      
+        <thead>
+             <tr>
+                 <th>学号</th>
+                 <th>姓名</th>
+                 <th>性别</th>
+                 <th>生日</th>
+                 <th>学号</th>
+             </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>00001</td>
+                <td>李刚</td>
+                <td>男</td>
+                <td>1990-10-10</td>
+                <td>134222</td>
+            </tr>
+            <tr>
+                <td>00002</td>
+                <td>李刚</td>
+                <td>男</td>
+                <td>1990-10-10</td>
+                <td>134222</td>
+            </tr>
+            <tr>
+                <td>00003</td>
+                <td>李刚</td>
+                <td>男</td>
+                <td>1990-10-10</td>
+                <td>134222</td>
+            </tr>
+            <tr>
+                <td>00004</td>
+                <td>李刚</td>
+                <td>男</td>
+                <td>1990-10-10</td>
+                <td>134222</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="div01">课程大纲</div>
+</body>
+</html>

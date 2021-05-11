@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        a{
+            color: gray;
+        }
+        a[target]{
+            color: lavender;
+        }
+        a[target=abc]{
+            color: red;
+        }
+        /* 需求：如果是中国的域名，使用绿色的字体 */
+        a[href*=cn]{
+            color: green;
+        }
+          /* 需求：如果是安全的网站https://开头，使用蓝色的字体 */
+        a[href^="https://"]{
+            color: navy;
+        }
+
+         /* 需求：如果是com结尾的，使用黄色的字体 */
+         a[href$="com"]{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_blank">百度</a>
+    <a href="http://www.taobao.com" target="abc">淘宝</a>
+    <a href="http://www.xiaomi.com" target="_blank">小米</a>
+    <a href="">测试</a>
+    <a href="http://www.xiaomi.cn">测试</a>
+    <a href="https://www.xiaomi.cn">测试</a>
+</body>
+</html>

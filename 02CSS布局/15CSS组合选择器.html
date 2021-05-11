@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>css组合选择器</title>
+    <style>
+        /* .class02,p {
+            background-color: lightblue;
+            font-size: 22px;
+            color: navy;
+        } */
+
+        .class01+p {
+            background-color: lightblue;
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+        p+div{
+            color:orangered;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="class01">第1个div容器
+            <p class="p1">第1.1个段落</p>
+            <div>
+                <p class="p1">第1.2个段落</p>
+            </div>
+        </div>
+        <p class="p1">第1个段落</p>
+        <h3>第1个标题</h3>
+      
+        <div>第2个div容器</div>
+        <h3>第2个标题</h3>
+        <p id="p2">第2个段落</p>
+        <div class="class02">第3个div容器</div>
+        <h3>第3个标题</h3>
+        <p class="p1 class01">第3个段落</p>
+</body>
+
+</html>
+
+<!-- 
+组合选择器 
+1. 分组选择器:  把多个相同配置的CSS放在同一个组里，简化CSS书写。 中间用,连接。
+2. 后代选择器： 某一标签的子子孙孙都可以响应。 中间用空格连接。
+3. 子选择器：   某一个标签的儿子 中间用>连接。
+4.相邻兄弟选择器: 某一个选择器后面的第一个兄弟 div+p  必须相邻 必须要挨着 中间有其它元素不行。
+5.普通兄弟选择器：某一个选择器后面的所有兄弟。 div~p 
+ 
+-->
