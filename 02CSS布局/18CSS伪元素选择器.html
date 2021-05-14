@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div01{
+                width: 800px;
+                height: 500px;
+                background-color: lightblue;
+                color: blue;
+                margin: auto;
+                text-align: justify;   /* 文本两端排列 */
+        }
+            /* 首字符设置 */
+        .div01::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+            /* 首行设置 */
+        .div01::first-line{
+            font-size: 22px;
+            color: green;
+        }
+        .div02>ul>li{
+            list-style-type:none;   /* 去掉前面的点 */
+
+        }
+        .div02>ul>li::before{
+            content: "【";
+            color: green;
+        }
+
+        .div02>ul>li::after{
+            content: "】";
+            color: green;
+        }
+        .div02>ul>li:hover{
+            font-size: 28px;
+            color: red;
+            font-weight: bold;
+        }
+        .div02>ul>li:hover::before{
+            color: red;
+        }
+
+        .div02>ul>li:hover::after{
+            color: red;
+        }
+
+        .div03>ul>li{
+            list-style-type:none;   /* 去掉前面的点 */
+        }
+
+        .div03>ul>li::before{
+            content: url("images/01.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+        前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局前端开发之CSS布局
+    </div>
+    <div class="div02">
+        <ul>
+            <li>北京--中国的首都</li>
+            <li>上海--中国的经济中心</li>
+            <li>深圳--首批经济开发特区</li>
+        </ul>
+    </div>
+    <div class="div03">
+        <ul>
+            <li>北京--中国的首都</li>
+            <li>上海--中国的经济中心</li>
+            <li>深圳--首批经济开发特区</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+伪元素选择器 
+
+伪元素：也是标签。不是手工写的，是系统自动添加的。
+
+伪元素最重要的两个：befor和after
+before：在元素面前加上内容  ---前置的准备
+after: 在元素前面加上内容  ---后置的清除（float:left-- clear）
+-->
