@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>多图的横向排列</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .course {
+      width: 1200px;
+      height: 500px;
+      background-color: lightblue;
+      margin: auto;
+    }
+
+    .course>.item {
+      /* margin: 7.5px; */
+      /* 所有盒子右边距都设置为20px */
+      margin-right: 20px;
+      float: left;
+    }
+
+    /* 伪类选择器 */
+    .course>.item:last-child {
+      /* 选择最后一个盒子右边距都设置为0px */
+      /* 也可以设置 margin:0px; */
+      margin-right: 0px;
+    }
+
+    .course>.item>.img {
+      width: 285px;
+      height: 150px;
+    }
+
+    .course>.item>.title {
+      width: 285px;
+      height: 30px;
+      background-color: blue;
+      color: red;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .course>.item>.title:hover {
+      background-color: red;
+      color: blue;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="course">
+    <div class="item">
+      <div class="img"><img src="images/course_csharp.jpg" alt=""></div>
+      <div class="title">CSS开发第二季CSS开发</div>
+    </div>
+    <div class="item">
+      <div class="img"><img src="images/course_html.png" alt=""></div>
+      <div class="title">CSS开发第二季CSS开发</div>
+    </div>
+    <div class="item">
+      <div class="img"><img src="images/course_csharp.jpg" alt=""></div>
+      <div class="title">CSS开发第二季CSS开发</div>
+    </div>
+    <div class="item">
+      <div class="img"><img src="images/course_html.png" alt=""></div>
+      <div class="title">CSS开发第二季CSS开发</div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

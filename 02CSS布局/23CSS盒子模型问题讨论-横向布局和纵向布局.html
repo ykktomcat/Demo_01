@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .row {
+      width: 1200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: auto;
+    }
+
+    .row>div {
+      width: 200px;
+      height: 200px;
+      float: left;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div><img src="images/image1.jpg" alt=""></div>
+    <div><img src="images/image1.jpg" alt=""></div>
+    <div><img src="images/image1.jpg" alt=""></div>
+  </div>
+  <div class="row">
+    <div><img src="images/image1.jpg" alt=""></div>
+    <div><img src="images/image1.jpg" alt=""></div>
+  </div>
+
+</body>
+
+
+</html>
+
+<!-- 
+  html
+  初始化时将body的margin设置为0px;
+  在默认情况下，所有的默认div盒子都是纵向排列。
+  ***如果盒子没有指点宽度和高度，默认情况下，盒子间有5px的空隙。***
+  希望横向排列时  float: left; 向左漂移 ：当前盒子左边的边框贴着前一个盒子右边的边框。
+
+  现在的需求：希望上面的三个在一行，下面两个在一行。
+
+ -->
