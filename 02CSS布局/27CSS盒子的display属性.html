@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .div01 {
+      width: 800px;
+      height: 50px;
+      background-color: lightskyblue;
+    }
+
+    .div01>ul>li {
+      list-style-type: none;
+      display: inline;
+      background-color: yellow;
+      width: 200px;
+      height: 50px;
+      /*横向 设置浮动*/
+      float: left;
+      color: red;
+      font-size: 20px;
+      text-align: center;
+      box-sizing: border-box;
+      /* 行高 */
+      line-height: 50px;
+      font-weight: bold;
+    }
+
+    .div01>ul>li:hover {
+      background-color: red;
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div01">
+    <ul>
+      <li>目录1</li>
+      <li>目录2</li>
+      <li>目录3</li>
+      <li>目录4</li>
+    </ul>
+  </div>
+</body>
+
+</html>
+<!-- 
+none;--------------相应元素被隐藏
+block;-------------以块的方式显示元素,如果在一行需要设置float: left;
+inline;------------不是块状，只能针对字，在一行显示元素
+inline-block; -----inline + block 在一行以块状显示元素,自动放置一行的block
+
+块状元素   div
+可以设置宽和高
+独占一行 可以换行
+如果没设置width就会和父元素的一致
+
+????
+ display: inline-block; 和 float: left; 一起使用报错???
+ 设置了inline不是块状的元素无法设置宽高 所以无法设置浮动
+ inline只控制文本的横向排列，无法设置背景色
+存疑：
+ https://blog.csdn.net/xunminwei0021/article/details/110390753
+????
+-->

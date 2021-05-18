@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .div01,
+    .div02 {
+      width: 100px;
+      height: 100px;
+      background-color: navy;
+    }
+
+    .div01 {
+      margin-bottom: 10px;
+    }
+
+    .div02 {
+      margin-top: 50px;
+    }
+
+    .div03 {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      padding: 50px;
+      box-sizing: border-box;
+
+
+    }
+
+    .div04 {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div01"></div>
+  <div class="div02"></div>
+
+  <div class="div03">
+    <div class="div04"></div>
+  </div>
+</body>
+
+</html>
+
+<!-- 
+1.当两个盒子连在一起 分别设置了margin-top 和 margin-bottom 
+合并后取两者中较大的值 
+2.父盒子中包含子盒子
+会在纵向上选择较大的margin 向上合并 取最大的值
+
+想让子盒子在父盒子的中间，设置父盒子的margin 和padding  再将 box-sizing: 设置成border-box;
+-->
