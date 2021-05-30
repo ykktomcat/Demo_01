@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 3000px;
+        }
+        .div01{
+            width: 100px;
+            height: 100px;
+            background-color: navy;
+            margin: 10px;
+        }
+        .div01:nth-child(2){
+            position: relative;
+            /* top: -110px; */
+            top: -110px;
+            left: 110px;
+        }
+
+     
+
+        .div01:nth-child(3){
+            position: relative;
+            /* top: -110px; */
+            top:-220px;
+            left: 220px;
+        }
+
+        .div02{
+            width: 1200px;
+            height: 80px;
+            background-color: navy;
+        }
+        .div02>a{
+            display: block;
+            width: 200px;
+            height: 80px;
+            float: left;
+            text-decoration: none;
+            line-height: 80px;
+            background-color: orchid;
+            text-align: center;
+        }
+
+        .div02>a:hover{
+          background-color: palegoldenrod;
+        }
+
+        .div02>a:hover::before{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 5px;
+            position: relative;
+            top: -5px;
+            background-color: red;
+        }
+
+        .div02>a:hover::after{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 5px;
+            position: relative;
+            top:-5px;
+            background-color: red;
+        }
+
+        .fixed{
+            position: fixed;
+            width: 115px;
+            height: 162px;
+            right: 0px;
+            top:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01"></div>
+    <div class="div01"></div>
+    <div class="div01"></div>
+    <img src="images/course_csharp.jpg" alt="">
+    <div class="div02">
+        <a href="#">演示</a>
+        <a href="#">演示</a>
+        <a href="#">演示</a>
+        <a href="#">演示</a>
+        <a href="#">演示</a>
+        <a href="#">演示</a>
+    </div>
+    <div class="fixed">
+        <img src="images/zx.jpg" alt="">
+    </div>
+</body>
+</html>
+<!-- 
+   在屏幕固定位置展示
+ -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+      .img_container>div{
+          width: 150px;
+          height: 150px;
+          margin: 10px;
+          float: left;
+      }
+      .img_container::after{
+          /* 也可以直接在h3里写 clear: both;  不推荐 */
+          /* 1.构建成块元素
+          2.浮动完成后，清除浮动 */
+          content: "";
+          display: block;
+          clear: both;
+      }
+      
+   
+    </style>
+</head>
+<body>
+    <h1>图片展示</h1>
+    <hr>
+    <h3>第一行</h3>
+    <div class="img_container">
+       <div><img class ="div01" src="images/css.jpg" alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+    </div>
+    <h3>第二行</h3>
+    <div class="img_container">
+        <div><img class ="div01" src="images/css.jpg" alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+       <div><img class ="div01" src="images/css.jpg"  alt=""></div>
+    </div>
+</body>
+</html>
+
+
+<!-- 纵向流式布局
+    static
+
+    清除float 浮动
+
+    如果在一个容器中实现了浮动float,建议在这个内容展示结束后直接清除浮动，不要给后续的元素传递浮动信息。 伪元素 before after
+ 
+-->

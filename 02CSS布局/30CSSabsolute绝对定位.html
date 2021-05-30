@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 1200px;
+            height: 340px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .container>.news{
+            width: 200px;
+            height: 240px;
+            background-color: lightblue;
+            position: absolute;
+            left: 100px;
+            top:50px;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="images/big02.png" alt="">
+    <div class="news">
+        CSSweb前端开发CSSweb前端开发CSSweb前端开发
+    </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    按照父容器的绝对位置进行定位    脱离文件流
+    如果父容器定位是static的类型，直接忽略，继续往上找父容器,直到body为止。
+-->
